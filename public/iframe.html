@@ -10,6 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1597620073084418"crossorigin="anonymous"></script>
+    <style>
+        /* Add any necessary styles here */
+    </style>
 </head>
 <body>
     <div id="particles-js"></div>
@@ -25,53 +28,45 @@
             <li><a href="/s"><span class="material-icons">settings</span>SETTINGS</a></li>
         </ul>
     </nav>
-    <style>
-
-    </style>
-</head>
-<body>
-
     <div id="gameframe">
         <div class="game">
-          <iframe id="goonframe" src="404frame.html"></iframe>
+            <iframe id="goonframe" src="404frame.html"></iframe>
         </div>
         <div class="options">
-          <button class="refresh-button" id="refresh" aria-label="Refresh">
-            <i class="fas fa-redo"></i>
-          </button>
-          <button class="fullscreen-button" id="fullscreen" aria-label="Fullscreen">
-            <i class="fas fa-expand"></i>
-          </button>
+            <button class="refresh-button" id="refresh" aria-label="Refresh">
+                <i class="fas fa-redo"></i>
+            </button>
+            <button class="fullscreen-button" id="fullscreen" aria-label="Fullscreen">
+                <i class="fas fa-expand"></i>
+            </button>
         </div>
-      </div>
-      <div class="ad_right">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1597620073084418"
-        crossorigin="anonymous"></script>
-   <!-- page_ad_right -->
-   <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-1597620073084418"
-        data-ad-slot="7713679963"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-   <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-   </script>
-      </div>
-      <div class="ad_left">
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1597620073084418"
-        crossorigin="anonymous"></script>
-   <!-- page_ad_right -->
-   <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-client="ca-pub-1597620073084418"
-        data-ad-slot="7713679963"
-        data-ad-format="auto"
-        data-full-width-responsive="true"></ins>
-   <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-   </script>
-      </div>
+    </div>
+    <div class="ad_right">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1597620073084418"crossorigin="anonymous"></script>
+        <!-- page_ad_right -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-1597620073084418"
+            data-ad-slot="7713679963"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+    <div class="ad_left">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1597620073084418"crossorigin="anonymous"></script>
+        <!-- page_ad_right -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-1597620073084418"
+            data-ad-slot="7713679963"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
     <script>
         function getUrlParameter(name) {
             name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
@@ -79,12 +74,12 @@
             var results = regex.exec(location.search);
             return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
         }
-    
+
         var url = getUrlParameter('url');
         const iframe = document.getElementById('goonframe');
         const refreshButton = document.getElementById('refresh');
         const fullscreenButton = document.getElementById('fullscreen');
-    
+
         if (url) { // self hosted checker
             if (url.startsWith('/hosted/')) {
                 iframe.src = url;
@@ -92,11 +87,11 @@
                 iframe.src = 'static/embed.html#' + url;
             }
         }
-    
+
         refreshButton.addEventListener('click', () => {
             iframe.src = iframe.src;
         });
-    
+
         fullscreenButton.addEventListener('click', () => {
             if (iframe.requestFullscreen) {
                 iframe.requestFullscreen();
@@ -109,12 +104,8 @@
             }
         });
     </script> 
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1597620073084418"
-    crossorigin="anonymous"></script>   
-       <!-- settings scripts i hope they work :) -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1597620073084418"crossorigin="anonymous"></script>   
     <script src="scripts/cloak.js"></script>
-    <script src = "scripts/cloak.js" type = "application/javascript" ></script>
-    <!-- other scripts  if these dont work i wanna die-->
-    <script src = "scripts/particles.js"></script>
+    <script src="scripts/particles.js"></script>
 </body>
 </html>
